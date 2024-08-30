@@ -1,7 +1,11 @@
+import Counter from "@/components/Counter";
+
 export default function Home() {
   return (
-    <>
-      <h1 className="text-2xl">Is it spooky times?</h1>
-    </>
+    <main className="h-[100%] gradient">
+      <div className="pb-[14rem] md:pb-[20rem] ">
+        <Counter />
+      </div>
+    </main>
   );
 }
