@@ -26,8 +26,8 @@ export default function About() {
               expect? But less about that, and more about me. This website?
               Yeah, mine. Those riddles you'd see if you mosey on over to the
               top of your screen and tap/click on "Riddles". Yep, also mine.
-              Those icons and illustrations? Nuh-uh not mine. Found those from a
-              website called{" "}
+              Those icons and illustrations? Nuh-uh, not mine. Found those from
+              a website called{" "}
               <a
                 href={process.env.ICONS_URL}
                 className="text-[#c64e3d]"
@@ -42,7 +42,7 @@ export default function About() {
                 className="text-[#c64e3d]"
                 target="_blank"
               >
-                GitHub
+                Github
               </a>
               . Though as it stands, the only thing on there is this website so.
               But also heres my{" "}
