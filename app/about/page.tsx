@@ -11,7 +11,7 @@ const creepster = Creepster({
 export default function About() {
   return (
     <main className="h-[100%] gradient">
-      <div className="max-w-[95rem] m-auto pt-8 pb-[10rem] px-3 lg:text-center h-dvh">
+      <div className="max-w-[95rem] m-auto pt-8 pb-[10rem] px-3 lg:text-center ">
         <div className="pb-8">
           <h2
             className={` ${creepster.variable} font-sans text-shadow-orange text-white text-5xl md:text-6xl lg:text-7xl xl:text-8xl `}
