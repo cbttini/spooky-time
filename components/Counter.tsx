@@ -31,13 +31,9 @@ function Counter() {
   const m = Math.floor((seconds % 3600) / 60);
   const s = Math.floor(seconds % 60);
 
-  interface Value {
-    style?: any;
-  }
-
   return (
     <>
-      <div className="flex items-center flex-row justify-center flex-wrap  max-w-[95rem] m-auto sm:px-4 flex-col lg:flex-nowrap md:flex-row">
+      <div className="flex items-center justify-center flex-wrap  max-w-[95rem] m-auto sm:px-4 flex-col lg:flex-nowrap md:flex-row">
         <div className="flex flex-1 flex-col items-center text-shadow-black mt-8 md:mt-10 xl:pr-10 xl:mt-0  ">
           <CounterTitle time={daysUntil} />
           <div
