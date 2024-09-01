@@ -3,6 +3,7 @@ import "./globals.css";
 import { Afacad, Jost } from "next/font/google";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
+import { Analytics } from "@vercel/analytics/react";
 
 const jost = Jost({
   subsets: ["latin"],
