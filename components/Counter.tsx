@@ -23,7 +23,6 @@ function Counter() {
     const timer = setInterval(() => {
       setSeconds(difference);
     }, 1000);
-
     return () => clearInterval(timer);
   }, [seconds]);
 
@@ -31,6 +30,10 @@ function Counter() {
   const h = Math.floor((seconds % 86400) / 3600);
   const m = Math.floor((seconds % 3600) / 60);
   const s = Math.floor(seconds % 60);
+
+  interface Value {
+    style?: any;
+  }
 
   return (
     <>
@@ -42,25 +45,33 @@ function Counter() {
           >
             <div className="flex flex-col text-white text-3xl sm:text-4xl lg:text-5xl xl:text-6xl">
               <span className="countdown text-7xl sm:text-8xl xl:text-9xl">
-                <span style={{ "--value": `${d}` }}></span>
+                <span
+                  style={{ "--value": `${d}` } as React.CSSProperties}
+                ></span>
               </span>
               days
             </div>
             <div className="flex flex-col text-white text-3xl sm:text-4xl lg:text-5xl xl:text-6xl ">
               <span className="countdown  text-7xl sm:text-8xl xl:text-9xl">
-                <span style={{ "--value": `${h}` }}></span>
+                <span
+                  style={{ "--value": `${h}` } as React.CSSProperties}
+                ></span>
               </span>
               hours
             </div>
             <div className="flex flex-col text-white text-3xl sm:text-4xl lg:text-5xl xl:text-6xl">
               <span className="countdown  text-7xl sm:text-8xl xl:text-9xl">
-                <span style={{ "--value": `${m}` }}></span>
+                <span
+                  style={{ "--value": `${m}` } as React.CSSProperties}
+                ></span>
               </span>
               min
             </div>
             <div className="flex flex-col text-white text-3xl sm:text-4xl lg:text-5xl xl:text-6xl">
               <span className="countdown   text-7xl sm:text-8xl xl:text-9xl">
-                <span style={{ "--value": `${s}` }}></span>
+                <span
+                  style={{ "--value": `${s}` } as React.CSSProperties}
+                ></span>
               </span>
               sec
             </div>
@@ -75,36 +86,3 @@ function Counter() {
 }
 
 export default Counter;
-
-// suppressHydrationWarning={true}
-
-{
-  /* <div
-className={`${creepster.variable} font-sans p-4 grid grid-flow-col gap-5 text-center auto-cols-max`}
->
-<div className="flex flex-col p-2 outline rounded-box text-white">
-  <span className="countdown  text-8xl">
-    <span style={{ "--value": `${d}` }}></span>
-  </span>
-  days
-</div>
-<div className="flex flex-col p-2 outline rounded-box text-white">
-  <span className="countdown text-8xl">
-    <span style={{ "--value": `${h}` }}></span>
-  </span>
-  hours
-</div>
-<div className="flex flex-col p-2 outline rounded-box text-white">
-  <span className="countdown  text-8xl">
-    <span style={{ "--value": `${m}` }}></span>
-  </span>
-  min
-</div>
-<div className="flex flex-col p-2 outline rounded-box text-white">
-  <span className="countdown  text-8xl">
-    <span style={{ "--value": `${s}` }}></span>
-  </span>
-  sec
-</div>
-</div> */
-}
