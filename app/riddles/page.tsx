@@ -10,7 +10,7 @@ const creepster = Creepster({
 
 export default function Riddles() {
   return (
-    <main className="h-[100%] gradient">
+    <main className="min-h-screen gradient">
       <div className="max-w-[95rem] m-auto pt-8 pb-[10rem] px-3 lg:text-center ">
         <div className="pb-4">
           <h2
