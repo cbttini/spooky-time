@@ -13,7 +13,7 @@ const jost = Jost({
 export const metadata: Metadata = {
   title: "Is it Spooky Time yet?",
   description:
-    "Wondering whether or not it's spooky time? You are are'nt you. Well look no further, the answer to said question lies here. ",
+    "Wondering whether or not it's Spooky Time? You are aren't you. Well, look no further, the answer to said question lies here. ",
 
   keywords: "halloween, spooky time, when is halloween, october",
 };
