@@ -33,7 +33,7 @@ export default function CounterTitle(props: Props) {
 
   return (
     <div
-      className={` ${creepster.variable} font-sans text-white mb-4 text-5xl text-center text-shadow-orange sm:text-6xl  xl:text-8xl`}
+      className={` ${creepster.variable} font-sans text-white mb-4 px-4 text-5xl text-center text-shadow-orange sm:text-6xl  xl:text-8xl`}
     >
       {titleSwitch()}
     </div>

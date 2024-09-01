@@ -9,7 +9,7 @@ export default function RiddleCard({ title, answer }: any) {
         </div>
         <div className="absolute right-[50%] translate-x-2/4 top-[70%] w-[14rem] lg:top-[60%] lg:w-[16rem] ">
           <details className="collapse bg-[#5984ad] ">
-            <summary className="collapse-title text-xl text-white font-medium pl-11 text-center transform transition-colors duration-150 hover:text-[#f75e5e] select-none ">
+            <summary className="collapse-title text-xl text-white font-medium pl-11 text-center transform transition-colors duration-150  select-none ">
               Reveal Answer
             </summary>
             <div className="collapse-content ">
