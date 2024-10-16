@@ -23,20 +23,7 @@ export default function About() {
           <div className=" bg-black/70 max-w-[90%] m-auto shadow-xl rounded-3xl">
             <p className="text-white text-lg text-left p-4 indent-5 leading-relaxed md:text-2xl md:indent-10 md:p-10 md:leading-relaxed">
               It's just a Halloween count down timer. Truly, what more did you
-              expect? But less about that, and more about me. This website?
-              Yeah, mine. Those riddles you'd see if you mosey on over to the
-              top of your screen and tap/click on "Riddles". Yep, also mine.
-              Those icons and illustrations? Nuh-uh, not mine. Found those from
-              a website called{" "}
-              <a
-                href={process.env.ICONS_URL}
-                className="text-[#c64e3d]"
-                target="_blank"
-              >
-                Icons8
-              </a>{" "}
-              or whatever. But anyways, less about that and even more about me.
-              You can check out my{" "}
+              expect? Heres my{" "}
               <a
                 href={process.env.GIT_URL}
                 className="text-[#c64e3d]"
@@ -44,13 +31,13 @@ export default function About() {
               >
                 Github
               </a>
-              . Though as it stands, the only thing on there is this website so.
-              But also heres my{" "}
+              ,
               <a
                 href={process.env.INSTA_URL}
                 className="text-[#c64e3d]"
                 target="_blank"
               >
+                {" "}
                 Instagram
               </a>{" "}
               and my{" "}
@@ -61,7 +48,6 @@ export default function About() {
               >
                 Linkedin
               </a>
-              . And thats about it. Happy Spooky Times!
             </p>
           </div>
           <Image src={mail} quality={100} alt="mail" />

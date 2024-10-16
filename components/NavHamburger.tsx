@@ -38,7 +38,7 @@ function NavHamburger() {
             About
           </li>
         </Link>
-        <Link href={process.env.SPIRIT_URL} target="_blank">
+        <Link href={process.env.NEXT_PUBLIC_SPIRIT_URL} target="_blank">
           <li className=" hover:text-gray-400 btn btn-link text-white text-lg no-underline  hover:no-underline">
             Shop Spirit
           </li>

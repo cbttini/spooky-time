@@ -19,7 +19,7 @@ export default function CounterTitle(props: Props) {
       case props.time === 0:
         return <h1>It is the spookiest day of the year!</h1>;
         break;
-      case props.time <= 31:
+      case props.time <= 30:
         return <h1>It is spooky time!</h1>;
         break;
       case props.time <= 59:

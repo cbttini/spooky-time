@@ -1,6 +1,8 @@
+"use client";
 import Image from "next/image";
 import { Creepster } from "next/font/google";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import logo from "../img/logo.png";
 import background from "../img/background.png";
 import NavHamburger from "../components/NavHamburger";
@@ -12,9 +14,11 @@ const creepster = Creepster({
 });
 
 function Navbar() {
+  const pathname = usePathname();
+
   return (
     <nav>
-      <div className=" flex justify-between text-white shadow-lg backdrop-blur items-center h-[8rem] md:h-[10rem] p-2 md:px-10 ">
+      <div className="flex justify-between text-white shadow-lg backdrop-blur items-center h-[8rem] md:h-[10rem] p-2 md:px-10 ">
         <Image
           alt="Halloween"
           src={background}
@@ -47,16 +51,27 @@ function Navbar() {
           <NavHamburger />
           <ul className="hidden lg:flex lg:items-center space-x-1   ">
             <Link href="/riddles">
-              <li className="btn btn-ghost btn-sm rounded-btn text-[1rem]">
+              <li
+                className={`btn btn-ghost btn-sm rounded-btn text-[1rem] ${
+                  pathname === `/riddles` ? `text-[#c64e3d]` : `text-white`
+                }`}
+              >
                 Riddles
               </li>
             </Link>
             <Link href="/about">
-              <li className="btn btn-ghost btn-sm rounded-btn text-[1rem]">
+              <li
+                className={`btn btn-ghost btn-sm rounded-btn text-[1rem] ${
+                  pathname === `/about` ? `text-[#c64e3d]` : `text-white`
+                }`}
+              >
                 About
               </li>
             </Link>
-            <Link href={process.env.SPIRIT_URL} target="_blank">
+            <Link
+              href={`${process.env.NEXT_PUBLIC_SPIRIT_URL}`}
+              target="_blank"
+            >
               <li className="btn text-white btn-outline btn-ghost btn-md rounded-3xl ml-1 text-[1rem]">
                 Shop Spirit
               </li>

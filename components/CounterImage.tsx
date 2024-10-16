@@ -13,11 +13,11 @@ function CounterImage(props: Props) {
       case props.time === 0:
         return <Image src={party} quality={100} alt="halloween party" />;
         break;
-      case props.time <= 31:
+      case props.time <= 30:
         return <Image src={spooky} quality={100} alt="spooky season" />;
         break;
 
-      case props.time >= 32:
+      case props.time >= 31:
         return <Image src={pumpkin} quality={100} alt="pumpkin" />;
         break;
     }
