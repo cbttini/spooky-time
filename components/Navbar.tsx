@@ -1,8 +1,8 @@
 "use client";
 import Image from "next/image";
 import { Creepster } from "next/font/google";
-import Link from "next/link";
 import { usePathname } from "next/navigation";
+import Link from "next/link";
 import logo from "../img/logo.png";
 import background from "../img/background.png";
 import NavHamburger from "../components/NavHamburger";
