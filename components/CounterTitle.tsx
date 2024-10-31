@@ -13,12 +13,13 @@ export interface Props {
 export default function CounterTitle(props: Props) {
   const titleSwitch = () => {
     switch (true) {
+      case props.time === 0:
+        return <h1>It is the spookiest time of the year!</h1>;
+        break;
       case props.time === 364:
         return <h1>Bye bye Spooky time! Until next year!</h1>;
         break;
-      case props.time === 365:
-        return <h1>It is the spookiest time of the year!</h1>;
-        break;
+
       case props.time === 0:
         return <h1>Spooky time looms...</h1>;
         break;

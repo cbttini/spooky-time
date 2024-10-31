@@ -17,6 +17,7 @@ function Counter() {
   const currentYear = dayjs().year().toString();
   const difference = dayjs(`${currentYear}-10-31`).diff(dayjs(), "second");
   const daysUntil = dayjs(`${currentYear}-10-31`).diff(dayjs(), "day");
+  const day = dayjs(`${currentYear}-10-31`);
 
   const [seconds, setSeconds] = useState(0);
 
@@ -41,7 +42,7 @@ function Counter() {
             className={`${creepster.variable} font-sans grid bg-black/50 rounded-3xl grid-flow-col gap-3 text-center auto-cols-max mt-4 p-6 sm:gap-5 sm:p-8 lg:gap-7 xl:p-12`}
           >
             <div className="flex flex-col text-white text-3xl sm:text-4xl lg:text-5xl xl:text-6xl">
-              {d === 365 ? (
+              {day ? (
                 <span className="text-7xl sm:text-8xl xl:text-9xl">00</span>
               ) : (
                 <span className="countdown text-7xl sm:text-8xl xl:text-9xl">
@@ -53,12 +54,10 @@ function Counter() {
               days
             </div>
             <div className="flex flex-col text-white text-3xl sm:text-4xl lg:text-5xl xl:text-6xl ">
-              {d === 365 ? (
-                <span className="countdown text-7xl sm:text-8xl xl:text-9xl">
-                  00
-                </span>
+              {day ? (
+                <span className="text-7xl sm:text-8xl xl:text-9xl">00</span>
               ) : (
-                <span className="countdown  text-7xl sm:text-8xl xl:text-9xl">
+                <span className="countdown text-7xl sm:text-8xl xl:text-9xl">
                   <span
                     style={{ "--value": `${h}` } as React.CSSProperties}
                   ></span>
@@ -67,12 +66,10 @@ function Counter() {
               hours
             </div>
             <div className="flex flex-col text-white text-3xl sm:text-4xl lg:text-5xl xl:text-6xl">
-              {d === 365 ? (
-                <span className="countdown text-7xl sm:text-8xl xl:text-9xl">
-                  00
-                </span>
+              {day ? (
+                <span className="text-7xl sm:text-8xl xl:text-9xl">00</span>
               ) : (
-                <span className="countdown  text-7xl sm:text-8xl xl:text-9xl">
+                <span className="countdown text-7xl sm:text-8xl xl:text-9xl">
                   <span
                     style={{ "--value": `${m}` } as React.CSSProperties}
                   ></span>
@@ -81,12 +78,10 @@ function Counter() {
               min
             </div>
             <div className="flex flex-col text-white text-3xl sm:text-4xl lg:text-5xl xl:text-6xl">
-              {d === 365 ? (
-                <span className="countdown text-7xl sm:text-8xl xl:text-9xl">
-                  00
-                </span>
+              {day ? (
+                <span className="text-7xl sm:text-8xl xl:text-9xl">00</span>
               ) : (
-                <span className="countdown   text-7xl sm:text-8xl xl:text-9xl">
+                <span className="countdown text-7xl sm:text-8xl xl:text-9xl">
                   <span
                     style={{ "--value": `${s}` } as React.CSSProperties}
                   ></span>

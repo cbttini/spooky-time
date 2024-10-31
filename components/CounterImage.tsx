@@ -10,7 +10,7 @@ export interface Props {
 function CounterImage(props: Props) {
   const imageSwitch = () => {
     switch (true) {
-      case props.time === 365:
+      case props.time === 0:
         return <Image src={party} quality={100} alt="halloween party" />;
         break;
       case props.time <= 30:
