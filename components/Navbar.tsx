@@ -18,7 +18,7 @@ function Navbar() {
 
   return (
     <nav>
-      <div className="flex justify-between text-white shadow-lg backdrop-blur items-center h-[8rem] md:h-[10rem] p-2 md:px-10 ">
+      <div className="flex justify-between text-white shadow-lg backdrop-blur items-center h-[8rem] md:h-[12rem] p-2 md:px-10 ">
         <Image
           alt="Halloween"
           src={background}

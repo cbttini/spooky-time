@@ -2,11 +2,13 @@
 
 import { useState, useRef, useEffect } from "react";
 import { FaPlay, FaPause, FaVolumeUp } from "react-icons/fa";
+import dayjs from "dayjs";
 
 function Player() {
   const [play, setPlay] = useState(false);
   const audioRef = useRef<HTMLAudioElement>(null);
   const maxVolume = 20;
+  const daysUntil = dayjs(`2025-10-31`).diff(dayjs(), "day");
 
   const togglePlay = (): void => {
     if (!play) {
@@ -23,6 +25,13 @@ function Player() {
     const volume = Number(value) / maxVolume;
     audioRef.current!.volume = volume;
   };
+
+  useEffect(() => {
+    if (daysUntil === 365) {
+      audioRef.current?.play();
+      setPlay(true);
+    } else return;
+  }, []);
 
   return (
     <main>
