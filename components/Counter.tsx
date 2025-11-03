@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, use } from "react";
+import { useState, useEffect } from "react";
 import { Creepster } from "next/font/google";
 import CounterTitle from "./CounterTitle";
 import CounterImage from "./CounterImage";
@@ -13,23 +13,37 @@ const creepster = Creepster({
 });
 
 function Counter() {
-  const year = 2025;
-  const difference = dayjs(`${year}-10-31`).diff(dayjs(), "second");
-  const daysUntil = dayjs(`${year}-10-31`).diff(dayjs(), "day");
+  const now = dayjs();
+  const currentYear = now.year();
+  const halloweenThisYear = dayjs(`${currentYear}-10-31`);
 
-  const [seconds, setSeconds] = useState(0);
+  const nextHalloween = now.isAfter(halloweenThisYear)
+    ? dayjs(`${currentYear + 1}-10-31`)
+    : halloweenThisYear;
+
+  const difference = nextHalloween.diff(now, "second");
+
+  const [seconds, setSeconds] = useState(difference);
 
   useEffect(() => {
     const timer = setInterval(() => {
-      setSeconds(difference);
+      const now = dayjs();
+      const currentYear = now.year();
+      const halloweenThisYear = dayjs(`${currentYear}-10-31`);
+      const nextHalloween = now.isAfter(halloweenThisYear)
+        ? dayjs(`${currentYear + 1}-10-31`)
+        : halloweenThisYear;
+      const newDifference = nextHalloween.diff(now, "second");
+      setSeconds(newDifference);
     }, 1000);
     return () => clearInterval(timer);
-  }, [seconds]);
+  }, []);
 
   const d = Math.floor(seconds / 86400);
   const h = Math.floor((seconds % 86400) / 3600);
   const m = Math.floor((seconds % 3600) / 60);
   const s = Math.floor(seconds % 60);
+  const daysUntil = d;
 
   return (
     <>

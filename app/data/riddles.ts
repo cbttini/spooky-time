@@ -31,6 +31,11 @@ const riddles = [
     title: `We drink with no mouth, shed with no shear. If we could walk, great booms you'd hear. What are we?`,
     answer: "Trees",
   },
+  {
+    id: "7",
+    title: `Gluttonies figurehead, a mire for all, Dancing wihtout rythem without call. Brazen in blasphemoy, untried in obedince. Destruction the crown, bedlam the audience.`,
+    answer: "Fire",
+  },
 ];
 
 export default riddles;
