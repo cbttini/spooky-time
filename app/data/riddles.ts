@@ -1,9 +1,7 @@
 const riddles = [
   {
     id: "1",
-    title: `I'll make you blench and tremble, leave you tense and mental. I
-          visit the weak and frail, though where there is courage, I do not
-          dwell. What am I?`,
+    title: `I'll make you blench and tremble, leave you tense and mental. I visit the weak and frail, where there is courage, I verily dwell. What am I?`,
     answer: "Fear",
   },
   {
@@ -18,7 +16,7 @@ const riddles = [
   },
   {
     id: "4",
-    title: `A Witch took stock on what she had behind the lock. 7 baskets of 31 dove feet, 4 jars of 30 crickets to eat. And 1 single silver dish, with 28 fins of a fish.`,
+    title: `A Witch took stock on what she had behind the lock. Seven baskets of thirty-one dove feet, four jars of thirty crickets to steep. And one single silver dish, with twenty-eight fins from fish.`,
     answer: "Days of each month",
   },
   {
@@ -33,8 +31,23 @@ const riddles = [
   },
   {
     id: "7",
-    title: `Gluttonies figurehead, a mire for all, Dancing wihtout rythem without call. Brazen in blasphemoy, untried in obedince. Destruction the crown, bedlam the audience.`,
+    title: `Gluttonies figurehead, a mire for all, Dancing without rhythm without call. Brazen in blasphemy, untried in obedience. Destruction the crown, bedlam the audience.`,
     answer: "Fire",
+  },
+  {
+    id: "8",
+    title: `Blood soaked and lithe, with a myriad of spears laden upon skin. Shed a tear, leave it not bare, and watch it procure a grin.`,
+    answer: "A Rose",
+  },
+  {
+    id: "9",
+    title: `She had peculiar eyes, always wandering, each a different shade and hue. Around one were freckles, faint yet numerous, a compliment to her glow, around the other, nothing save a blemish or two. And although there was never a smile, there was warmth, warmth you could feel.`,
+    answer: "The Sky",
+  },
+  {
+    id: "10",
+    title: `An old man sat upon a cliff edge, one eye ever watchful. It was his solemn task, you see. “No one else ’er do it,” he’d think. “Might as well be me.” Through rain and snow, sunrise and sunset, he’d be still, unyielding as stone. Some would pay him visit, but no words he’d speak. It was his solemn task, you see.`,
+    answer: "A Lighthouse",
   },
 ];
 
