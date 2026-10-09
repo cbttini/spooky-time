@@ -1,17 +1,17 @@
 const riddles = [
   {
     id: "1",
-    title: `I'll make you blench and tremble, leave you tense and mental. I visit the weak and frail, where there is courage, I verily dwell. What am I?`,
+    title: `I'll make you blench and tremble, leave you tense and feeble. I visit the weak and frail, where there is courage, I verily dwell. What am I?`,
     answer: "Fear",
   },
   {
     id: "2",
-    title: `A feast for worm's, withdrawn from light. A gray thing, without concerns. Not a pretty sight.`,
+    title: `A feast for worms, withdrawn from light. A gray thing, without concerns. Not a pretty sight.`,
     answer: "A Corpse",
   },
   {
     id: "3",
-    title: `A Kingdom with garnet halls, ceaseless behind its pearl walls. Sovereign of it's obsidian space, hidden to the citrine face.`,
+    title: `A Kingdom with garnet halls, ceaseless behind its pearl walls. Sovereign of its obsidian space, hidden to the citrine face.`,
     answer: "The Heart",
   },
   {
@@ -31,7 +31,7 @@ const riddles = [
   },
   {
     id: "7",
-    title: `Gluttonies figurehead, a mire for all, Dancing without rhythm without call. Brazen in blasphemy, untried in obedience. Destruction the crown, bedlam the audience.`,
+    title: `Gluttony's figurehead, a mire for all, Dancing without rhythm without call. Brazen in blasphemy, untried in obedience. Destruction the crown, bedlam the audience.`,
     answer: "Fire",
   },
   {
