@@ -12,12 +12,12 @@ const riddles = [
   {
     id: "3",
     title: `A Kingdom with garnet halls, ceaseless behind its pearl walls. Sovereign of it's obsidian space, hidden to the citrine face.`,
-    answer: "A Heart",
+    answer: "The Heart",
   },
   {
     id: "4",
     title: `A Witch took stock on what she had behind the lock. Seven baskets of thirty-one dove feet, four jars of thirty crickets to steep. And one single silver dish, with twenty-eight fins from fish.`,
-    answer: "Days of each month",
+    answer: "The Days of each month",
   },
   {
     id: "5",
@@ -46,7 +46,7 @@ const riddles = [
   },
   {
     id: "10",
-    title: `An old man sat upon a cliff edge, one eye ever watchful. It was his solemn task, you see. “No one else ’er do it,” he’d think. “Might as well be me.” Through rain and snow, sunrise and sunset, he’d be still, unyielding as stone. Some would pay him visit, but no words he’d speak. It was his solemn task, you see.`,
+    title: `An old man sat upon a cliff edge, one eye ever watchful. It was his solemn task, you see. “No one else ’er do it,” he’d think. “Might as well be me.” Through rain and snow, sunrise and sunset, he’d be still, unyielding as stone. Some would pay him a visit, but no words he’d speak. It was his solemn task, you see.`,
     answer: "A Lighthouse",
   },
 ];
